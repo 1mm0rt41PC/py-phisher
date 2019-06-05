@@ -1,0 +1,36 @@
+From: "Py-Phisher" <stat@${DOMAIN}.fr>
+To: <a@a.a>
+Subject: =?${CHARSET}?B?${SUBJECT_B64}?=
+X-Priority: 1
+X-Mailer: Microsoft Office Outlook 12.0
+Content-Type: multipart/mixed;
+	boundary="_010_AM4PR0501MB2658FDF74A40774CDCEEBBE1CDB70AM4PR0501MB2658_"
+MIME-Version: 1.0
+
+--_010_AM4PR0501MB2658FDF74A40774CDCEEBBE1CDB70AM4PR0501MB2658_
+Content-Type: multipart/related;
+	boundary="_009_AM4PR0501MB2658FDF74A40774CDCEEBBE1CDB70AM4PR0501MB2658_";
+	type="text/html"
+
+--_009_AM4PR0501MB2658FDF74A40774CDCEEBBE1CDB70AM4PR0501MB2658_
+Content-Type: text/html; charset="${CHARSET}"
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=${CHARSET}">
+<META content="MSHTML 6.00.6002.18972" name=GENERATOR></HEAD>
+<BODY>${BODY_HTML}</BODY></HTML>
+
+--_009_AM4PR0501MB2658FDF74A40774CDCEEBBE1CDB70AM4PR0501MB2658_--
+
+--_010_AM4PR0501MB2658FDF74A40774CDCEEBBE1CDB70AM4PR0501MB2658_
+Content-Type: application/msword;
+	name="${FILENAME}"
+Content-Description: ${FILENAME}
+Content-Disposition: attachment;
+	filename="${FILENAME}"
+Content-Transfer-Encoding: base64
+
+${FILE}
+
+--_010_AM4PR0501MB2658FDF74A40774CDCEEBBE1CDB70AM4PR0501MB2658_--
