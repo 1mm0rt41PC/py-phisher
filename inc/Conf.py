@@ -32,11 +32,18 @@ G_USER_GID  = 65534;# nobody (/etc/passwd)
 
 
 G_login    = None;
-if 'o365_login' in os.environ:
-	G_login = os.environ['o365_login'];
+if 'pyphisher_login' in os.environ:
+	G_login = os.environ['pyphisher_login'];
 G_pass     = None;
-if 'o365_pass' in os.environ:
-	G_pass = os.environ['o365_pass'];
+if 'pyphisher_pass' in os.environ:
+	G_pass = os.environ['pyphisher_pass'];
+G_server     = 'imap-mail.outlook.com';
+if 'pyphisher_server' in os.environ:
+	G_server = os.environ['pyphisher_pass'];
+G_port     = 993;
+if 'pyphisher_port' in os.environ:
+	G_port = os.environ['pyphisher_port'];
+
 
 
 def iniLog( name, logfile ):

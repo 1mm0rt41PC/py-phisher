@@ -53,7 +53,7 @@ class Mail:
 		
 	def getMail(self, login=None, passsword=None):
 		log.info('Recv email template for the campagne from IMAP');
-		mail = imaplib.IMAP4_SSL('imap-mail.outlook.com');
+		mail = imaplib.IMAP4_SSL(G_server, G_port);
 		if not login:
 			try:
 				login = raw_input('Login: ');
